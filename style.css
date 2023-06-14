@@ -1,0 +1,13 @@
+
+#H1{ 
+
+   border: 2px solid red;
+   border-radius: 8px;
+   padding: 5px;
+}
+
+#h3{
+   font-style: italic;
+background-color: black;
+color: aliceblue;
+}
