@@ -1,0 +1,16 @@
+.box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+.box .pseudo-selector {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background-color: blue;
+}
