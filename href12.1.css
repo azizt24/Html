@@ -1,0 +1,14 @@
+a {
+  position: relative;
+}
+
+a::after {
+  content: attr(href);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f2f2f2;
+  padding: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+}
