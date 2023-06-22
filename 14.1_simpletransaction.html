@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>animation</title>
+</head>
+<style>
+
+.box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -200px;
+  width: 100%;
+  height: 100%;
+  background-color: lightblue;
+  transition: transform 0.5s ease;
+  transform: translateX(0);
+}
+
+.box:hover::before {
+  transform: translateX(100%);
+}
+
+.box:hover {
+  background-color: lightblue;
+}
+
+
+
+</style>
+<body>
+  <div class="box"></div>
+
+</body>
+</html>
