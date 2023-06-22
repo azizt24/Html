@@ -1,0 +1,29 @@
+.box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden; /* Ensure pseudo-selectors don't overflow */
+}
+
+.box:hover .left {
+  background-color: purple;
+}
+
+.left, .right {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.left {
+  left: 0;
+  width: 50%;
+  background-color: red;
+}
+
+.right {
+  right: 0;
+  width: 50%;
+  background-color: blue;
+}
