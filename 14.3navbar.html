@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>navbar animation</title>
+</head>
+<style>
+  nav {
+  text-align: center;
+}
+
+.menu {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 5;
+}
+
+.menu li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.menu li a {
+  position: relative;
+  padding: 10px;
+  color: #000;
+  text-decoration: none;
+}
+
+.menu li a:before,
+.menu li a:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.3s ease, transform 0.3s ease;
+}
+
+.menu li a:before {
+  top: 0;
+  left: 0;
+  width: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.menu li a:after {
+  bottom: 0;
+  right: 0;
+  width: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.menu li a:hover:before,
+.menu li a:hover:after {
+  width: 100%;
+  transform: scaleX(1);
+}
+
+
+
+
+
+</style>
+<body>
+  <nav>
+    <ul class="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  
+</body>
+</html>
